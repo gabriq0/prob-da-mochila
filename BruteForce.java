@@ -46,5 +46,12 @@ public class BruteForce{
         System.out.println("Valor Máximo (Força Bruta): " + maxValor);
         System.out.println("-------------------------------------------------------");
         System.out.printf("Tempo de Execução: %.6f ms%n", (endTime - startTime) / 1_000_000.0);
+        System.out.println("-------------------------------------------------------");
+
+        int[] valoresGulosa = {60, 100, 120};
+        int[] pesosGulosa = {10, 20, 30};
+        int valorGulosa = brute(0, 50, valoresGulosa, pesosGulosa);
+        System.out.println("Resposta Correta do Exemplo da Estratégia Gulosa: " + valorGulosa);
+        System.out.println("-------------------------------------------------------");
     }
 }
